@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Finance AI Update Oct 2025</title>
+  <meta name="description" content="GoDaddy Finance AI Transformation: impact, live agents, demos, roadmap, and registry vision." />
+  <style>
+    :root{
+      --bg:#f9fafb;
+      --ink:#1f2937;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --p1:#e9d5ff;
+      --p1-ink:#5b21b6;
+      --p2:#dbeafe;
+      --p2-ink:#1e3a8a;
+      --p3:#d1fae5;
+      --p3-ink:#065f46;
+      --p4:#ffedd5;
+      --p4-ink:#9a3412;
+      --p5:#ffe4e6;
+      --p5-ink:#9f1239;
+      --p6:#fef9c3;
+      --p6-ink:#854d0e;
+      --ring: 0 0 0 3px rgba(59,130,246,.25);
+      --radius: 14px;
+      --shadow: 0 10px 25px rgba(17,24,39,.08), 0 2px 8px rgba(17,24,39,.06);
+    }
+    html,body{height:100%}
+    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:linear-gradient(180deg,var(--bg),#fff 30%);color:var(--ink)}
+    .container{max-width:1120px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;z-index:40;backdrop-filter:blur(8px);background:rgba(255,255,255,.7);border-bottom:1px solid #eee}
+    .nav{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.2px}
+    .brand-badge{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--p2),var(--p1));display:grid;place-items:center;box-shadow:var(--shadow)}
+    .brand-badge svg{width:22px;height:22px;opacity:.9}
+    .nav a{color:var(--muted);text-decoration:none;font-weight:600;padding:8px 10px;border-radius:10px}
+    .nav a:hover{background:#f3f4f6;color:var(--ink)}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;margin-top:18px}
+    .hero h1{font-size:clamp(28px,3vw,40px);margin:0 0 8px 0}
+    .hero p{color:var(--muted);margin:0}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
+    .grid{display:grid;gap:18px}
+    .grid.cols-4{grid-template-columns:repeat(4,1fr)}
+    .grid.cols-5{grid-template-columns:repeat(5,1fr)}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    @media(max-width:1000px){.hero{grid-template-columns:1fr}.grid.cols-4,.grid.cols-5{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:680px){.grid.cols-4,.grid.cols-5,.grid.cols-3,.grid.cols-2{grid-template-columns:1fr}}
+    .kpi{border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px}
+    .kpi .k{font-size:26px;font-weight:800}
+    .kpi .s{color:var(--muted);font-size:13px}
+    .kpi.p1{background:var(--p2)}
+    .kpi.p2{background:var(--p1)}
+    .kpi.p3{background:var(--p3)}
+    .kpi.p4{background:var(--p4)}
+    section{margin-top:26px}
+    section h2{font-size:20px;margin:0 0 10px 0;display:flex;align-items:center;gap:10px}
+    .sub{color:var(--muted);margin:0 0 10px 0}
+    .agent{display:flex;flex-direction:column;gap:8px;border:1px solid #eef2f7}
+    .agent .meta{display:flex;gap:8px;flex-wrap:wrap;color:#374151;font-size:12px}
+    .agent .tag{padding:4px 8px;border-radius:999px;font-weight:700}
+    .tag.productivity{background:var(--p4);color:var(--p4-ink)}
+    .tag.process{background:var(--p2);color:var(--p2-ink)}
+    .tag.decision{background:var(--p1);color:var(--p1-ink)}
+    .tag.knowledge{background:var(--p3);color:var(--p3-ink)}
+    .tag.analytics{background:var(--p5);color:var(--p5-ink)}
+    .demo{position:relative;overflow:hidden}
+    .video-ph{aspect-ratio:16/9;border-radius:12px;background:linear-gradient(135deg,var(--p5),var(--p2));display:grid;place-items:center;color:var(--ink);font-weight:800}
+    .video-ph small{display:block;font-weight:600;color:var(--muted)}
+    .play{position:absolute;inset:auto auto 14px 14px;background:#fff;border:none;border-radius:999px;padding:10px 14px;font-weight:800;box-shadow:var(--shadow);cursor:pointer}
+    .lane{border-radius:12px;padding:14px;background:#fff;border:1px dashed #e5e7eb}
+    .lane h3{margin:0 0 8px 0;font-size:14px;letter-spacing:.3px}
+    .lane ul{margin:0;padding-left:18px}
+    .pipe{border:1px solid #e5e7eb;border-radius:12px;padding:14px;background:#fff}
+    .pill{display:inline-block;padding:4px 8px;border-radius:999px;background:#f3f4f6;font-size:12px;margin-right:6px}
+    .muted{color:var(--muted)}
+    footer{margin:36px 0;color:var(--muted);font-size:12px}
+    .ghost{opacity:.6}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/></svg></div>
+        <div>Finance AI Transformation</div>
+      </div>
+      <nav class="links" aria-label="Primary">
+        <a href="#roadmap">Roadmap</a>
+        <a href="#impact">Impact</a>
+        <a href="#agents">Live Agents</a>
+        <a href="#demos">Demos</a>
+        <a href="#pipeline">What’s Next</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="title">
+      <div>
+        <h1 id="title">Finance AI Update Oct 2025</h1>
+        <p>From experimentation to strategic impact across Productivity, Process, Decision, Knowledge, and Analytics agents.</p>
+      </div>
+      <div class="card">
+        <div class="grid cols-2">
+          <div class="kpi p1"><div class="k">84%</div><div class="s">Finance team AI engagement</div></div>
+          <div class="kpi p2"><div class="k">12</div><div class="s">Agents in production</div></div>
+          <div class="kpi p3"><div class="k">200+</div><div class="s">Hours saved per month</div></div>
+          <div class="kpi p4"><div class="k">$1.0–2.5M</div><div class="s">Projected annual savings</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section id="roadmap">
+      <h2>Roadmap — Crawl → Walk → Run</h2>
+      <p class="sub">Concise lanes by agent category with named owners and dated milestones.</p>
+      <div class="grid cols-3">
+        <div class="lane">
+          <h3>🐣 CRAWL (Now)</h3>
+          <ul>
+            <li>Launch productivity pilots (FAQ bots, calendar automation)</li>
+            <li>Train Rising Stars cohort; build foundational skills</li>
+            <li>Track adoption metrics and early ROI</li>
+          </ul>
+        </div>
+        <div class="lane">
+          <h3>🚶 WALK (Next 2–3 Qtrs)</h3>
+          <ul>
+            <li>Expand process automations in Close, Reconciliations, Procurement</li>
+            <li>Deliver decision playbooks (credit, variance analysis)</li>
+            <li>Stand up Finance Agent Catalog v1 with discovery + tagging</li>
+          </ul>
+        </div>
+        <div class="lane">
+          <h3>🏃 RUN (12–18 mo)</h3>
+          <ul>
+            <li>Establish Finance Agent Registry with reuse + governance patterns</li>
+            <li>Scale analytics agents (renewals, pricing, forecasting)</li>
+            <li>Integrate enterprise observability + ROI tracking dashboards</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACT -->
+    <section id="impact">
+      <h2>Impact dashboard</h2>
+      <div class="grid cols-5">
+        <div class="card"><strong>Productivity Agents</strong><div class="muted">Tools that improve efficiency and reduce manual effort.</div></div>
+        <div class="card"><strong>Process Agents</strong><div class="muted">Automations that streamline workflows and transactional steps.</div></div>
+        <div class="card"><strong>Decision Agents</strong><div class="muted">Support judgment with data-driven insights and risk assessments.</div></div>
+        <div class="card"><strong>Knowledge Agents</strong><div class="muted">Provide guidance and answers through FAQs, policy assistants, or compliance helpers.</div></div>
+        <div class="card"><strong>Analytics Agents</strong><div class="muted">Deliver dashboards, reporting automation, and insights for planning and forecasting.</div></div>
+      </div>
+    </section>
+
+    <!-- AGENTS -->
+    <section id="agents">
+      <h2>What we’ve accomplished — Live agents by category</h2>
+      
+      <h3>Process Agents</h3>
+      <div class="grid cols-3">
+        <div class="card agent"><div><strong>PO Automation</strong></div><div class="meta"><span class="tag process">Process</span> Workday • Outlook</div></div>
+        <div class="card agent"><div><strong>Contractor Onboarding</strong></div><div class="meta"><span class="tag process">Process</span> Workday</div></div>
+        <div class="card agent"><div><strong>Calendar Automation</strong></div><div class="meta"><span class="tag process">Process</span> Outlook</div></div>
+        <div class="card agent"><div><strong>GBU Intake Bot (Good/Bad/Ugly)</strong></div><div class="meta"><span class="tag process">Process</span> Intake • Feedback</div></div>
+      </div>
+
+      <h3>Decision Agents</h3>
+      <div class="grid cols-3">
+        <div class="card agent"><div><strong>Credit Authorization Agent</strong></div><div class="meta"><span class="tag decision">Decision</span> Workday</div></div>
+        <div class="card agent"><div><strong>Credit Monitoring Agent</strong></div><div class="meta"><span class="tag decision">Decision</span> Workday • Alerts</div></div>
+        <div class="card agent"><div><strong>Banking Requirements Agent</strong></div><div class="meta"><span class="tag decision">Decision</span> Treasury • Banking</div></div>
+      </div>
+
+      <h3>Knowledge Agents</h3>
+      <div class="grid cols-3">
+        <div class="card agent"><div><strong>SOX Control Owner Guide</strong></div><div class="meta"><span class="tag knowledge">Knowledge</span> Policy KB</div></div>
+        <div class="card agent"><div><strong>Finance FAQ Bots</strong></div><div class="meta"><span class="tag knowledge">Knowledge</span> Teams</div></div>
+        <div class="card agent"><div><strong>Payroll FAQ Bot</strong></div><div class="meta"><span class="tag knowledge">Knowledge</span> Payroll</div></div>
+        <div class="card agent"><div><strong>Equity FAQ Bot</strong></div><div class="meta"><span class="tag knowledge">Knowledge</span> Equity</div></div>
+        <div class="card agent"><div><strong>Policy Guidance Assistant</strong></div><div class="meta"><span class="tag knowledge">Knowledge</span> Intranet</div></div>
+      </div>
+
+      <h3>Analytics Agents</h3>
+      <div class="grid cols-3">
+        <div class="card agent"><div><strong>Claude GBU Dashboard</strong></div><div class="meta"><span class="tag analytics">Analytics</span> QuickSight • S3</div></div>
+        <div class="card agent"><div><strong>Claude Finance Priorities Dashboard</strong></div><div class="meta"><span class="tag analytics">Analytics</span> QuickSight • Priorities</div></div>
+        <div class="card agent"><div><strong>MBR Agent</strong></div><div class="meta"><span class="tag analytics">Analytics</span> Reporting • Monthly</div></div>
+      </div>
+    </section>
+
+    <!-- DEMOS -->
+    <section id="demos">
+      <h2>Demo showcase (recorded)</h2>
+      <div class="grid cols-3">
+        <div class="card demo"><div class="video-ph"><div><strong>Process Agent — PO Automation</strong><small>demo_po_automation.mp4</small></div></div><button class="play">▶︎ Play</button></div>
+        <div class="card demo"><div class="video-ph"><div><strong>Decision Agent — Credit Monitoring</strong><small>demo_credit_monitoring.mp4</small></div></div><button class="play">▶︎ Play</button></div>
+        <div class="card demo"><div class="video-ph"><div><strong>Analytics Agent — Claude Dashboard</strong><small>demo_claude_dashboard.mp4</small></div></div><button class="play">▶︎ Play</button></div>
+      </div>
+      <div class="grid cols-3">
+        <div class="card demo"><div class="video-ph"><div><strong>Knowledge Agent — FAQ Bot</strong><small>demo_faq_bot.mp4</small></div></div><button class="play">▶︎ Play</button></div>
+        <div class="card demo"><div class="video-ph"><div><strong>Process Agent — Calendar Automation</strong><small>demo_calendar_automation.mp4</small></div></div><button class="play">▶︎ Play</button></div>
+        <div class="card demo"><div class="video-ph"><div><strong>Decision Agent — Banking Requirements</strong><small>demo_banking_requirements.mp4</small></div></div><button class="play">▶︎ Play</button></div>
+      </div>
+    </section>
+
+    <!-- PIPELINE -->
+    <section id="pipeline">
+      <h2>What’s Next — Pipeline</h2>
+      <div class="pipe"><strong>GABI-like Finance Companion</strong> <div class="muted">[Timeline: Q4 2025] [Owner: TBD] [Impact: $XXX]</div></div>
+    </section>
+
+    <footer>
+      <div>Prepared
